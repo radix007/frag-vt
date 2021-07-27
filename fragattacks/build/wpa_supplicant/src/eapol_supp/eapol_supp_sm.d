@@ -1,0 +1,21 @@
+/home/kali/frag-vt/fragattacks/build/wpa_supplicant/src/eapol_supp/eapol_supp_sm.o: \
+ ../src/eapol_supp/eapol_supp_sm.c \
+ /home/kali/frag-vt/fragattacks/src/utils/includes.h \
+ /home/kali/frag-vt/fragattacks/src/utils/build_config.h \
+ /home/kali/frag-vt/fragattacks/src/utils/common.h \
+ /home/kali/frag-vt/fragattacks/src/utils/os.h \
+ /home/kali/frag-vt/fragattacks/src/utils/wpa_debug.h \
+ /home/kali/frag-vt/fragattacks/src/utils/wpabuf.h \
+ /home/kali/frag-vt/fragattacks/src/utils/state_machine.h \
+ /home/kali/frag-vt/fragattacks/src/utils/wpabuf.h \
+ /home/kali/frag-vt/fragattacks/src/utils/eloop.h \
+ /home/kali/frag-vt/fragattacks/src/crypto/crypto.h \
+ /home/kali/frag-vt/fragattacks/src/crypto/md5.h \
+ /home/kali/frag-vt/fragattacks/src/common/eapol_common.h \
+ /home/kali/frag-vt/fragattacks/src/eap_peer/eap.h \
+ /home/kali/frag-vt/fragattacks/src/common/defs.h \
+ /home/kali/frag-vt/fragattacks/src/eap_common/eap_defs.h \
+ /home/kali/frag-vt/fragattacks/src/eap_peer/eap_methods.h \
+ /home/kali/frag-vt/fragattacks/src/eap_peer/eap_config.h \
+ /home/kali/frag-vt/fragattacks/src/eap_peer/eap_proxy.h \
+ ../src/eapol_supp/eapol_supp_sm.h

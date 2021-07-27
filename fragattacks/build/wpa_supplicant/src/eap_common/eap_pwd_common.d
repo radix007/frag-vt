@@ -1,0 +1,13 @@
+/home/kali/frag-vt/fragattacks/build/wpa_supplicant/src/eap_common/eap_pwd_common.o: \
+ ../src/eap_common/eap_pwd_common.c \
+ /home/kali/frag-vt/fragattacks/src/utils/includes.h \
+ /home/kali/frag-vt/fragattacks/src/utils/build_config.h \
+ /home/kali/frag-vt/fragattacks/src/utils/common.h \
+ /home/kali/frag-vt/fragattacks/src/utils/os.h \
+ /home/kali/frag-vt/fragattacks/src/utils/wpa_debug.h \
+ /home/kali/frag-vt/fragattacks/src/utils/wpabuf.h \
+ /home/kali/frag-vt/fragattacks/src/utils/const_time.h \
+ /home/kali/frag-vt/fragattacks/src/common/dragonfly.h \
+ /home/kali/frag-vt/fragattacks/src/crypto/sha256.h \
+ /home/kali/frag-vt/fragattacks/src/crypto/crypto.h \
+ ../src/eap_common/eap_defs.h ../src/eap_common/eap_pwd_common.h

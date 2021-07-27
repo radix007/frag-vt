@@ -1,0 +1,11 @@
+Group-1
+./fragattack.py wlan1mon ping  Passed
+./fragattack.py wlan1mon ping I,E,E  Passed
+./fragattack.py wlan1mon ping I,E,E --delay 5  Failed
+./fragattack.py wlan1mon ping-frag-sep  Failed
+./fragattack.py wlan1mon ping-frag-sep --pn-per-qos  Failed
+./fragattack.py wlan1mon ping I,E --amsdu  Passed
+./fragattack.py wlan1mon ping I,P,P  Passed
+./fragattack.py wlan1mon ping I,P  Passed
+./fragattack.py wlan1mon ping I,E,P  Passed
+./fragattack.py wlan1mon ping I,P,E  Passed

@@ -1,0 +1,383 @@
+Group-1
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a00000000000000000001aafc5d640ccdbee88c8a8852c247f2062a1044abefd373f73ae8bc5e88a49cc200000000000000000000000000000000000000000000000000000000000000006769ff1a2bf63cc5573746b944b02e2d001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000361821473538ec327b5082420d9be6120000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:25:21] This is FragAttack version 1.3.[1;0m
+[02:25:21] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:25:21] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:25:21] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:25:23] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:25:23] [0;32mAction.StartAuth[1;0m
+[02:25:23] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:23] [0;32mAction.BeforeAuth[1;0m
+[02:25:23] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:23] Obtained encryption keys from daemon[1;0m
+[02:25:23] [0;32mAction.AfterAuth[1;0m
+[02:25:24] [0;32mAction.Connected[1;0m
+[02:25:24] Sending DHCP discover with XID 1409674155[1;0m
+[02:25:24] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:25:24] Received DHCP offer, sending DHCP request.[1;0m
+[02:25:24] Sending DHCP request with XID 1409674155[1;0m
+[02:25:24] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:25:24] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:25:24] [0;32mGenerating ping test[1;0m
+[02:25:24] Using key 471f08652be811efb3225a8e6a23a3cd to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<LLC  dsap=0xaa ssap=0xaa ctrl=3 |<SNAP  code=IPv4 |<IP  frag=0 proto=icmp src=192.168.0.190 dst=192.168.0.1 |<ICMP  |<Raw  load='test_ping_icmp' |>>>>>>>[1;0m
+[02:25:24] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load="N\x99\x8e2\xb9W\xe4\xc8\xf9\x85\xe6\x07\xf4\xa4):m\x80\xcc\xe5\x8emT\xcdb\x8a\xba\x05\xf4\xa7$\xe1T\x13\xca'\xcb\xef\x1f\x17\xfa\xdfI\xefV\xcd\x13(\x1b\xc0" |<Raw  load='\xac\x8b\x02\x86\x9c\xd1\x14@' |>>>>>[1;0m
+[02:25:24] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45386 flags= frag=0 ttl=64 proto=icmp chksum=0x4779 src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:25:24] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:25:24] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a00000000000000000001d968d5ac476f5d6fc695316a141a2758d52f896afa61e152d8d3f88a3c470b650000000000000000000000000000000000000000000000000000000000000000ede05119acf608f72512f9bc72becdbd001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000551560a25149b218ee72955ee69a1a410000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:25:25] This is FragAttack version 1.3.[1;0m
+[02:25:25] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:25:25] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:25:25] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:25:27] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:25:27] [0;32mAction.StartAuth[1;0m
+[02:25:27] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:27] [0;32mAction.BeforeAuth[1;0m
+[02:25:27] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:27] Obtained encryption keys from daemon[1;0m
+[02:25:27] [0;32mAction.AfterAuth[1;0m
+[02:25:28] [0;32mAction.Connected[1;0m
+[02:25:28] Sending DHCP discover with XID 248534887[1;0m
+[02:25:28] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:25:28] Received DHCP offer, sending DHCP request.[1;0m
+[02:25:28] Sending DHCP request with XID 248534887[1;0m
+[02:25:28] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:25:28] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:25:28] [0;32mGenerating ping test[1;0m
+[02:25:28] Using key b88d16b8fc67b15fd9ad489ad38f5c6c to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:25:28] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='z\x7fNF`!\xdc\x93\x9b\r\xa6\x1c\x85\x8e\xdb\xd2\x84\x988{,\xaf*\x94\x08' |<Raw  load='k+oV\xb4\xbe*\x9c' |>>>>>[1;0m
+[02:25:28] Using key b88d16b8fc67b15fd9ad489ad38f5c6c to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:25:28] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=4 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\xe5Kx Nt\xaa\x05\xd2O\xe3\xc5>}\xc0J3\x88(l\x8c\x82\xc1\xa0\xf3' |<Raw  load='\x01YG7:\x0e/p' |>>>>>[1;0m
+[02:25:28] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45389 flags= frag=0 ttl=64 proto=icmp chksum=0x4776 src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:25:28] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:25:28] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a000000000000000000015c13f4d4b7c8945abfd60f392231754807b83ca4683f7abf69782645d22cc1d80000000000000000000000000000000000000000000000000000000000000000b55d033757ce742825e180d024040d33001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ce82294c261eb0eff9d7e6313a64d46c0000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:25:29] This is FragAttack version 1.3.[1;0m
+[02:25:29] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:25:29] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:25:29] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:25:30] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:25:30] [0;32mAction.StartAuth[1;0m
+[02:25:30] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:30] [0;32mAction.BeforeAuth[1;0m
+[02:25:30] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:30] Obtained encryption keys from daemon[1;0m
+[02:25:30] [0;32mAction.AfterAuth[1;0m
+[02:25:31] [0;32mAction.Connected[1;0m
+[02:25:31] Sending DHCP discover with XID 1225557480[1;0m
+[02:25:31] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:25:31] Received DHCP offer, sending DHCP request.[1;0m
+[02:25:31] Sending DHCP request with XID 1225557480[1;0m
+[02:25:31] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:25:31] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:25:31] [0;32mGenerating ping test[1;0m
+[02:25:31] Using key 5378c8504ad98ec2b062b42303c231b3 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:25:31] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='@\nK\r\xc1\xaa\xadre%\x87j\xa0(\xbb\xd4w\xbe\xbf\xb5F\xb9u9\x11' |<Raw  load='\x08mB<\xce\x0btA' |>>>>>[1;0m
+[02:25:31] Sleeping 5.0 seconds[1;0m
+[02:25:36] Using key 5378c8504ad98ec2b062b42303c231b3 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:25:36] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=4 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load=',~E\xc8?\x15\xf9\xc1\x98\xe2\xc7}\xf7\x96@\x94\xf9}\x14\xc1\x82b\x0f\xado' |<Raw  load='\xc4=\x89\xd5\x1d\x07=\xab' |>>>>>[1;0m
+[02:25:36] d8:47:32:5d:07:3f: ARP: Ether / ARP who has 192.168.0.190 says 192.168.0.1 ==> Ether / ARP is at 00:c0:ca:97:91:26 says 192.168.0.190 on lo[1;0m
+[02:25:41] [0;31m>>> Test timed out! Retry to be sure, or manually check result.[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:25:41] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a0000000000000000000140fcbf4fb9f156f6efac5a987380e942c3b61add84e4f398c0eac0844eb2ae200000000000000000000000000000000000000000000000000000000000000000eae7dfbb3223812f022039efd2946e7d001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000907540cd6850b248402da1bb50628dd20000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:25:43] This is FragAttack version 1.3.[1;0m
+[02:25:43] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:25:43] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:25:43] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:25:44] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:25:44] [0;32mAction.StartAuth[1;0m
+[02:25:44] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:44] [0;32mAction.BeforeAuth[1;0m
+[02:25:44] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:44] Obtained encryption keys from daemon[1;0m
+[02:25:44] [0;32mAction.AfterAuth[1;0m
+[02:25:45] [0;32mAction.Connected[1;0m
+[02:25:45] Sending DHCP discover with XID 650579268[1;0m
+[02:25:45] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:25:45] Received DHCP offer, sending DHCP request.[1;0m
+[02:25:45] Sending DHCP request with XID 650579268[1;0m
+[02:25:45] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:25:45] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:25:45] [0;32mGenerating ping test[1;0m
+[02:25:45] Using key 52c7673761c8cf218f08d2ce2486fb10 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:25:45] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='L:\x1e\xf0a\xb6\xef\xbd\xc0H\xef\x83\x16\xc4\xa5\x8b\xf5\xf1\xfb\x8aP\xac\xb1.>' |<Raw  load='R\xe4\xb1\xa0\x0c\x95|\xc6' |>>>>>[1;0m
+[02:25:45] Using key 52c7673761c8cf218f08d2ce2486fb10 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=528 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3 |<SNAP  |>>>>[1;0m
+[02:25:45] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=528 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=4 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\x9ak\x8f\xe8,\xc2]U' |<Raw  load='\x8fQmD \x020d' |>>>>>[1;0m
+[02:25:45] Using key 52c7673761c8cf218f08d2ce2486fb10 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:25:45] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=5 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\x0c\xe2\x0f\xc6Dm]\xb1P\xcd\x908\x89\xb4\x9d\xbe\xae\xa8\x9b\xc1\xdf\x19\xae\xca\r' |<Raw  load='\x1c e4C\x89\x95d' |>>>>>[1;0m
+[02:25:50] [0;31m>>> Test timed out! Retry to be sure, or manually check result.[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:25:50] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a00000000000000000001419fdcd72458248bcb079d31f455ee64b690b0ae18406d81919098b93278f4fc0000000000000000000000000000000000000000000000000000000000000000c0ac3fec1ae006b3b8438d4c8e97d2f0001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000816ffe5a39d921c772e4c8a1109cb90a0000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:25:51] This is FragAttack version 1.3.[1;0m
+[02:25:51] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:25:51] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:25:51] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:25:53] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:25:53] [0;32mAction.StartAuth[1;0m
+[02:25:53] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:53] [0;32mAction.BeforeAuth[1;0m
+[02:25:53] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:25:53] Obtained encryption keys from daemon[1;0m
+[02:25:53] [0;32mAction.AfterAuth[1;0m
+[02:25:54] [0;32mAction.Connected[1;0m
+[02:25:54] Sending DHCP discover with XID 577605468[1;0m
+[02:25:54] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:25:54] Received DHCP offer, sending DHCP request.[1;0m
+[02:25:54] Sending DHCP request with XID 577605468[1;0m
+[02:25:54] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:25:54] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:25:54] [0;32mGenerating ping test[1;0m
+[02:25:54] Using key 305a974a80334061adbd6601f0b68a70 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:25:54] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=1 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\x9f\xbd\x1a\x8c2Xu\x14@>\xe6\xe0\x1eD\xea\x87\xe9\xa5\xc6[@F\x92\x02W' |<Raw  load='M\xe0)\x81\x96.T3' |>>>>>[1;0m
+[02:25:54] Using key 305a974a80334061adbd6601f0b68a70 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=528 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3 |<SNAP  |>>>>[1;0m
+[02:25:54] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=528 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\x18\xaa\xe0\xfecOp\xfe' |<Raw  load='\x81\x04"\xa3\xfci!\xcd' |>>>>>[1;0m
+[02:25:54] Using key 305a974a80334061adbd6601f0b68a70 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:25:54] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=2 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\xc8n,\x00*\x92\xd5,a]\x7f\xa2\x85\x82\xecF=\xbe\xd2\x87@\xd1\rL%' |<Raw  load='T}\x0c\x146\xd2\xe51' |>>>>>[1;0m
+[02:25:59] [0;31m>>> Test timed out! Retry to be sure, or manually check result.[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:25:59] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a000000000000000000010a8d69a85a677d8ad29f74fb78b8da604b4505f99f25d5104b02367dd22154ff0000000000000000000000000000000000000000000000000000000000000000de79d1ada184f903cbc67ba2a4005d9a001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000094daaf8d59cc82e00431f073cbd4b560000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:26:00] This is FragAttack version 1.3.[1;0m
+[02:26:00] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:26:00] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:26:00] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:26:02] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:26:02] [0;32mAction.StartAuth[1;0m
+[02:26:02] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:02] [0;32mAction.BeforeAuth[1;0m
+[02:26:02] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:02] Obtained encryption keys from daemon[1;0m
+[02:26:02] [0;32mAction.AfterAuth[1;0m
+[02:26:03] [0;32mAction.Connected[1;0m
+[02:26:03] Sending DHCP discover with XID 403154163[1;0m
+[02:26:03] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:26:03] Received DHCP offer, sending DHCP request.[1;0m
+[02:26:03] Sending DHCP request with XID 403154163[1;0m
+[02:26:03] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:26:03] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:26:03] [0;32mGenerating ping test[1;0m
+[02:26:03] Using key 8fdc288615af1d82b25cfdc94eceb03d to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  Reserved=1 TID=2 |<Ether  dst=d8:47:32:5d:07:3f src=00:c0:ca:97:91:26 type=0x32 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |<Raw  |>>>>>[1;0m
+[02:26:03] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  Reserved=1 TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\xe0\xd4*\x17;\xa9:\xdfM\xb9p9\xa1\xc5\xd5\x88q\x03\n\xbd\rv\xdcX\x86\xbc|<\xf8\xaf\x85{5\xd2t}\x16\x8ep\x0b\xc4\xd7\xfb\x8d+}\xdaC\xfcC^u\xdd\xd90zg\xd1|\x8d\x86\xff\x168' |<Raw  load='\xec\xd5\xc9zpu\x98\xb2' |>>>>>[1;0m
+[02:26:03] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45398 flags= frag=0 ttl=64 proto=icmp chksum=0x476d src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:26:03] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:26:03] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a0000000000000000000120eb9938d79bbf12098bb7b62ff4a5649ea2d29e5134ad338375788639d82785000000000000000000000000000000000000000000000000000000000000000050ef2eb728bfecebe41c936890113bcb001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a00000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c80c49acdcaecb433142291a80e7da80000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:26:04] This is FragAttack version 1.3.[1;0m
+[02:26:04] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:26:04] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:26:04] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:26:06] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:26:06] [0;32mAction.StartAuth[1;0m
+[02:26:06] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:06] [0;32mAction.BeforeAuth[1;0m
+[02:26:06] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:06] Obtained encryption keys from daemon[1;0m
+[02:26:06] [0;32mAction.AfterAuth[1;0m
+[02:26:07] [0;32mAction.Connected[1;0m
+[02:26:07] Sending DHCP discover with XID 769093387[1;0m
+[02:26:07] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:26:07] Received DHCP offer, sending DHCP request.[1;0m
+[02:26:07] Sending DHCP request with XID 769093387[1;0m
+[02:26:07] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:26:07] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:26:07] [0;32mGenerating ping test[1;0m
+[02:26:07] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:26:07] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:26:07] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45401 flags= frag=0 ttl=64 proto=icmp chksum=0x476a src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:26:07] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:26:07] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a00000000000000000001655471a00f13a9de8682c190dd31d79dd36985bb16db9550a8f35ec4bb215f9800000000000000000000000000000000000000000000000000000000000000001c78356b3cf9cd97e5004658babb7400001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cdd03abf11475f100e032c66d2eb332c0000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:26:08] This is FragAttack version 1.3.[1;0m
+[02:26:08] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:26:08] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:26:08] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:26:09] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:26:09] [0;32mAction.StartAuth[1;0m
+[02:26:09] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:09] [0;32mAction.BeforeAuth[1;0m
+[02:26:09] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:09] Obtained encryption keys from daemon[1;0m
+[02:26:09] [0;32mAction.AfterAuth[1;0m
+[02:26:10] [0;32mAction.Connected[1;0m
+[02:26:10] Sending DHCP discover with XID 716242494[1;0m
+[02:26:10] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:26:10] Received DHCP offer, sending DHCP request.[1;0m
+[02:26:10] Sending DHCP request with XID 716242494[1;0m
+[02:26:10] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:26:10] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:26:10] [0;32mGenerating ping test[1;0m
+[02:26:10] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<LLC  dsap=0xaa ssap=0xaa ctrl=3 |<SNAP  code=IPv4 |<IP  frag=0 proto=icmp src=192.168.0.190 dst=192.168.0.1 |<ICMP  |<Raw  load='test_ping_icmp' |>>>>>>>[1;0m
+[02:26:10] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45404 flags= frag=0 ttl=64 proto=icmp chksum=0x4767 src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:26:10] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:26:10] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a000000000000000000015d11e58a531331a69d9d6a36343b4f82fa78e3ada2e5c6e56c7e79d854fe64e2000000000000000000000000000000000000000000000000000000000000000034380da02f5098f49e1777aac6708caa001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000209fff9e26a9745c10fd8194da0456090000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:26:12] This is FragAttack version 1.3.[1;0m
+[02:26:12] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:26:12] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:26:12] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:26:13] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:26:13] [0;32mAction.StartAuth[1;0m
+[02:26:13] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:13] [0;32mAction.BeforeAuth[1;0m
+[02:26:13] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:13] Obtained encryption keys from daemon[1;0m
+[02:26:13] [0;32mAction.AfterAuth[1;0m
+[02:26:14] [0;32mAction.Connected[1;0m
+[02:26:14] Sending DHCP discover with XID 1294364653[1;0m
+[02:26:14] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:26:14] Received DHCP offer, sending DHCP request.[1;0m
+[02:26:14] Sending DHCP request with XID 1294364653[1;0m
+[02:26:14] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:26:14] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:26:14] [0;32mGenerating ping test[1;0m
+[02:26:14] Using key 388bbd75c71ccce175b266b0ff9b5760 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:26:14] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='"*\xbc\xac\x96\xbb\xdb\x06C7W\xe2\xaaio\xf2\x7f\x8e\x1e\xbe\xa6e\xff\xc8\xf6' |<Raw  load='\x89[\xb9K\x81\x8a\xa0\xc3' |>>>>>[1;0m
+[02:26:14] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:26:14] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45407 flags= frag=0 ttl=64 proto=icmp chksum=0x4764 src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:26:14] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:26:14] Closing daemon and cleaning up ...[1;0m
+
+Successfully initialized wpa_supplicant
+wlan1mon: SME: Trying to authenticate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Trying to associate with d8:47:32:5d:07:3f (SSID='Disconnected' freq=2447 MHz)
+wlan1mon: Associated with d8:47:32:5d:07:3f
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103007502010a00000000000000000001ad81672a770830657bee4fca5198ee575a0fc10df1f784d760812fca53312e10000000000000000000000000000000000000000000000000000000000000000024e230a6579fd256b9876ced3f4b462e001630140100000fac020100000fac040100000fac020000
+wlan1mon: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan1mon: EAPOL-TX d8:47:32:5d:07:3f 0103005f02030a0000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000763f82ae67e5c608febafed6020da0100000
+wlan1mon: WPA: Key negotiation completed with d8:47:32:5d:07:3f [PTK=CCMP GTK=TKIP]
+wlan1mon: CTRL-EVENT-CONNECTED - Connection to d8:47:32:5d:07:3f completed [id=0 id_str=]
+[02:26:15] This is FragAttack version 1.3.[1;0m
+[02:26:15] Detected ath9k_htc, using injection bug workarounds[1;0m
+[02:26:16] Using interface monwlan1mon (ath9k_htc) to inject frames.[1;0m
+[02:26:16] Starting wpa_supplicant using: ../wpa_supplicant/wpa_supplicant -Dnl80211 -i wlan1mon -cclient.conf -W -K[1;0m
+[02:26:17] Station: setting BSS MAC address d8:47:32:5d:07:3f[1;0m
+[02:26:17] [0;32mAction.StartAuth[1;0m
+[02:26:17] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=256 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:17] [0;32mAction.BeforeAuth[1;0m
+[02:26:17] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=272 |<Dot11QoS  TID=1 |<LLC  dsap=0xaa ssap=0xaa ctrl=3...[1;0m
+[02:26:17] Obtained encryption keys from daemon[1;0m
+[02:26:17] [0;32mAction.AfterAuth[1;0m
+[02:26:18] [0;32mAction.Connected[1;0m
+[02:26:18] Sending DHCP discover with XID 1088264537[1;0m
+[02:26:18] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=288 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=1 PN1=...[1;0m
+[02:26:18] Received DHCP offer, sending DHCP request.[1;0m
+[02:26:18] Sending DHCP request with XID 1088264537[1;0m
+[02:26:18] [Injected packet] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=ff:ff:ff:ff:ff:ff SC=304 |<Dot11QoS  TID=1 |<Dot11CCMP  PN0=2 PN1=...[1;0m
+[02:26:18] [0;32mReceived DHCP ack. My ip is 192.168.0.190 and router is 192.168.0.1.[1;0m
+[02:26:18] [0;32mGenerating ping test[1;0m
+[02:26:18] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+MF addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=320 |<Dot11QoS  TID=2 |<Raw  load='\xaa\xaa\x03\x00\x00\x00\x08\x00E\x00\x00*\x00\x01\x00\x00@\x01\xf8\xc2\xc0\xa8\x00\xbe\xc0' |>>>[1;0m
+[02:26:18] Using key ce1eef8b660182dbcb7c225be65089b0 to encrypt <Dot11  subtype=8 type=Data FCfield=to-DS addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Raw  load='\xa8\x00\x01\x08\x00\t\x14\x00\x00\x00\x00test_ping_icmp' |>>>[1;0m
+[02:26:18] [Injected] <Dot11  subtype=8 type=Data FCfield=to-DS+protected addr1=d8:47:32:5d:07:3f addr2=00:c0:ca:97:91:26 addr3=d8:47:32:5d:07:3f SC=321 |<Dot11QoS  TID=2 |<Dot11CCMP  PN0=3 PN1=1 key_id=0 ext_iv=1 PN2=0 PN3=0 PN4=0 PN5=0 |<Raw  load='\xa4o\xc9y\x07\x89Q0\xd2vM\x9d\xdbp+]\x1a\x10\xbb*\xe58\x84Sb' |<Raw  load='B!\xd7\x06\xd8V\x97I' |>>>>>[1;0m
+[02:26:18] Received packet: <Ether  dst=00:c0:ca:97:91:26 src=d8:47:32:5d:07:3f type=IPv4 |<IP  version=4 ihl=5 tos=0x0 len=42 id=45410 flags= frag=0 ttl=64 proto=icmp chksum=0x4761 src=192.168.0.1 dst=192.168.0.190 |<ICMP  type=echo-reply code=0 chksum=0x1114 id=0x0 seq=0x0 |<Raw  load='test_ping_icmp' |>>>>[1;0m
+[02:26:18] [0;32m>>> TEST COMPLETED SUCCESSFULLY[1;0m
+wlan1mon: CTRL-EVENT-DISCONNECTED bssid=d8:47:32:5d:07:3f reason=3 locally_generated=1
+nl80211: deinit ifname=wlan1mon disabled_11b_rates=0
+wlan1mon: CTRL-EVENT-TERMINATING 
+[02:26:18] Closing daemon and cleaning up ...[1;0m
+
